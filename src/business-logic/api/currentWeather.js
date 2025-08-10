@@ -1,6 +1,6 @@
 async function fetchCurrentWeather(lat, lon) {
   try {
-    const apiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
+    const apiKey = process.env.REACT_APP_OPEN_WEATHER_MAP_API_KEY;
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`);
     const data = await response.json();
     console.log(data);
@@ -14,7 +14,7 @@ async function fetchCurrentWeather(lat, lon) {
 
 async function getLocationImage(name) {
   try {
-     const apiKey = process.env.LOCATION_IMAGE_API_KEY;
+     const apiKey = process.env.REACT_APP_LOCATION_IMAGE_API_KEY;
     const response = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${name}&client_id=${apiKey}`);
     const data = await response.json();
     console.log("location url");
