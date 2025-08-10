@@ -1,6 +1,6 @@
 # Hawanow
 This is a weather app for Earth and space
-
+We will keep adding new features
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
