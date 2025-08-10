@@ -1,0 +1,35 @@
+.temparature{
+    display: flex;
+    gap: 0;
+
+}
+
+.temparatureDisplay
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 16px;
+}
+
+h3
+{
+    padding: 0px;
+    margin: 0px;
+}
+span
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.time
+{
+    padding: 5px;
+    border-radius: 16px;
+    background-color: rgba(40, 60, 90, 0.75);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}

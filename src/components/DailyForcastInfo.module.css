@@ -1,0 +1,42 @@
+.forcastHolder
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #f9f9f9;  
+    border-radius: 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+.highLowTemp
+{
+    
+    display: flex;
+    gap: 10px;
+    background-color: purple;
+    border-radius: 16px;
+    color: white;
+}
+
+.weatherSummary
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.dayWiseSummary
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+h3,h5
+{
+    margin: 0px;
+    padding: 0px;
+}
+

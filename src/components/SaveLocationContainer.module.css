@@ -1,0 +1,29 @@
+.savedLocation
+{
+    border-radius: 16px;
+    height: 300px;
+    display: flex;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.savedLocation:hover
+{
+    box-shadow: 10px 10px 10px rgba(36,36,36,0.5);
+}
+
+.imgDisplay {
+ height: 300px;
+    width: 100%;
+}
+
+.title
+{
+    position: absolute;
+    padding: 16px;
+    background-color: lightgrey;
+    opacity: 0.5;
+    border-radius: 16px;
+    border: 2px solid black;
+    margin: 5px;
+}
