@@ -1,0 +1,44 @@
+.forecastDisplayParams
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;   
+    align-items: center;
+}
+
+.forecastDisplayParamsHolder
+{
+    display: flex;
+    border-radius: 16px;
+    background-color: burlywood;
+    border: 1px solid black;
+    margin: 12px;
+}
+
+h6 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.weatherForecastParamHolder
+{
+    background-color: cadetblue;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 16px;
+}
+
+.forcastGrid
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+

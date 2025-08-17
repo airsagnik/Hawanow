@@ -14,9 +14,6 @@ function WeatherDisplay() {
                     <h4>Current Location</h4>
                     <h2>{weatherData == null ? "" : weatherData.place}</h2>
                 </div>
-                <div>
-                    <FaLocationCrosshairs />
-                </div>
             </div>
             <div className={classes.currentLocWeatherDisplay}>
                 <div className={classes.currentLocWeatherDetail}>
@@ -27,10 +24,6 @@ function WeatherDisplay() {
                             <WeatherData />
                         </div>
                     </div>
-                </div>
-                <div className={classes.addNewCityCard}>
-                    <FaPlus />
-                    <h4>Add City</h4>
                 </div>
             </div>
         </div>

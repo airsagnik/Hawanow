@@ -14,6 +14,7 @@ import SideNav from '../components/SideNav';
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
+import ForecastDisplay from '../components/ForecastDisplay';
 
 
 function WeatherHome() {
@@ -25,7 +26,7 @@ function WeatherHome() {
             <div className={classes.overlay}>
                 <SideNav sidebar={showSideNav} />
             </div>
-            <div>
+            <div className={classes.mainPage}>
                 <header>
                     <nav className={classes.headernav}>
                         <div className={classes.search}>
@@ -39,13 +40,15 @@ function WeatherHome() {
                     </nav>
                 </header>
                 <main className={classes.grid1}>
+                    <div>
                     <WeatherDisplay />
-                    <ChanceOfRain />
-                    <WeatherHighlight />
-                    <DailyForcast />
+                    <WeatherHighlight />   
+                    </div>
+                    <div className={classes.forecastSection}>
+                        <ForecastDisplay/>
+                    </div>
                 </main>
             </div>
-
         </div>
     );
 }
