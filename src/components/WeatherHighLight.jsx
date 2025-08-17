@@ -12,14 +12,8 @@ function WeatherHighlight() {
             <h3>Todays Highlights</h3>
             {weatherData == null ? <div></div> :
                 <div className={classes.weatherHighlight}>
-                    <WeatherParamContainer title="Precipitation" child={<h2>{weatherData.rain}%</h2>} />
-                    <WeatherParamContainer title="Humidity" child={<h2>{weatherData.humidity}%</h2>} />
-                    <WeatherParamContainer title="Wind" child={<h2>{weatherData.windSpeed} km/hr</h2>} />
-                    <WeatherParamContainer title="Sunrise and Sunset" child={<SunriseSunset />} />
-
+                    {weatherData.weatherParams.map((data) => <WeatherParamContainer key={data.title} title={data.title} child={<h2>{data.value} {data.unit}</h2>} />)}
                 </div>}
-            <br />
-            <WeatherParamContainer title="Today" option={"Week"} child={<TempGraph />} />
         </div>
     );
 }

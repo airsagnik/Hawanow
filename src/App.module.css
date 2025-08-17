@@ -13,6 +13,7 @@ body
 .grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 100vh;
 }
 
 .search
@@ -35,7 +36,21 @@ body
    
 }
 
+.mainPage
+{
+    width: 100%;
+}
+
 .overlay
 {
     background-color: #060b26;
+}
+
+.forecastSection
+{
+    overflow: scroll;
+    height: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 }
