@@ -27,8 +27,8 @@ export const SideBarData = [
         cName : "nav-text"
     },
         {
-        title:"Analytics",
-        path:"/analytics",
+        title:"Maps",
+        path:"/weatherMap",
         icon : <IoMdAnalytics />,
         cName : "nav-text"
     },

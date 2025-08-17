@@ -154,8 +154,8 @@ function prepareForecastDataList(data) {
 
     return {
       place,
-      pop : pop,
-      time : timeOfForcastedWeather,
+      pop: pop,
+      time: timeOfForcastedWeather,
       description: weather.description,
       weatherParams: weatherParams,
       icon: weather.icon,
@@ -184,7 +184,7 @@ async function extractWeatherInfo(data, forecastData) {
   console.log(forecastDisplay);
 
   weatherParams = mapWeatherData(data)
-  
+
 
 
 
@@ -202,9 +202,11 @@ async function extractWeatherInfo(data, forecastData) {
 
   return {
     place,
+    lat: lat,
+    lon: lon,
     description: weather.description,
     weatherParams: weatherParams,
-    forecastData : forecastDisplay,
+    forecastData: forecastDisplay,
     icon: weather.icon,
     iconUrl: iconUrl,
     temperature: main.temp,
