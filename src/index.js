@@ -1,3 +1,4 @@
+import "leaflet/dist/leaflet.css";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -8,6 +9,10 @@ import WeatherHome from './pages/WeatherHome';
 import SideNav from './components/SideNav';
 import WeatherProvider from './business-logic/context-providers/weatherContexProvidert';
 import SavedLocation from './pages/SavedLocations';
+import WeatherMaps from './pages/WeatherMaps';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +26,11 @@ root.render(
       <Routes element={<SideNav />}>
         <Route path='/location' element={
           <SavedLocation />
+        } />
+      </Routes>
+      <Routes element={<SideNav />}>
+        <Route path='/weatherMap' element={
+          <WeatherMaps />
         } />
       </Routes>
     </WeatherProvider>
